@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-json
+      - id: name-tests-test
+      - id: trailing-whitespace
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+#      - entry: bash -c 'git diff --name-only origin/main | grep "\.py$" | xargs flake8'
